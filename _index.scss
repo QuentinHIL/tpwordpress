@@ -1,0 +1,38 @@
+main{
+    margin-bottom: 5%;
+    #herohome{
+    div{
+        @include imagehero;
+    }
+    }
+    .cont{
+        @include margin70;
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .container{
+            @media only screen and (max-width:768px){
+                padding:1.5em;
+            }
+            @media only screen and (max-width:425px){
+                padding: 1em;
+            }
+            border-radius: 1em;
+            margin: 0;
+            padding:3em;
+            width:25%;
+            background-color: $quad;
+            a{
+                @media only screen and (max-width:425px){
+                    font-size: 0.75em;
+                }
+                @include textancre;
+                @include font300;
+                color: white;
+            }
+        }
+    }
+    
+
+}

@@ -1,0 +1,35 @@
+header{
+    background-color: $prim;
+    @include margin90;
+    margin-bottom: 2.5%;
+    display:flex;
+    align-items:center;
+    div{
+        i{
+            @media only screen and (max-width:425px){
+                font-size:2em;
+            }
+            font-size: 4em;
+            color: $quad;
+        }
+    }
+    #menuordi{
+        width:100%;
+        @media only screen and (max-width:425px){
+            font-size:0.75em;
+        };
+    nav{
+    ul{
+        padding: 0;
+        display:flex;
+        justify-content: space-around;
+        @include listenone;
+        a{
+            @include textancreheader;
+            @include font300;
+            color: white;
+            }
+    }
+    }
+    }
+}

@@ -1,0 +1,29 @@
+#heroabout{
+    div{
+        @include imagehero;
+        background-position-y: 60%;
+    }
+}
+#blocpresentation{
+    @media only screen and (max-width:425px){
+        width: 100%;
+    };
+    @include margin70;
+    background-color: $quad;
+    border-radius: 2em;
+    margin-bottom: 7%;
+    margin-top: 7%;
+    h2{
+        @include font700;
+        text-align: center;
+        color: white;
+        padding-top: 5%;
+    }
+    p{
+        @include margin70;
+        @include font300;
+        @include justify;
+        color: white;
+        padding-bottom: 5%;
+    }
+}

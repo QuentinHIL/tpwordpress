@@ -1,0 +1,45 @@
+#herocanada{
+    div{
+        @include imagehero;
+        background-position-y: 20%;
+    }
+}
+.regions{
+    @media only screen and (max-width:650px){
+        width: 100%;
+    };
+    @include margin70;
+    margin-top: 5%;
+    background-color: $quad;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .reg{
+        @media only screen and (max-width:425px){
+            font-size: 1em;
+        };
+        @include font700;
+        font-size: 2em;
+        color: white;
+    }
+    .img{
+        @media only screen and (max-width:425px){
+            size : smaller;
+        };
+    }
+    .prov{
+        @media only screen and (max-width:425px){
+            font-size: 0.75em;
+        };
+        @include font300;
+        color: white;
+    }
+    .cap{
+        @media only screen and (max-width:425px){
+            font-size: 0.75em;
+        };
+        @include font300;
+        color: white;
+    }
+}

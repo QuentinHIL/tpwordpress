@@ -1,0 +1,47 @@
+@mixin textancreheader{
+    text-decoration: none;
+    color: $ter;
+}
+@mixin textancre{
+    text-decoration: none;
+    color: black;
+}
+@mixin listenone{
+    list-style: none;
+}
+@mixin margin90{
+    width: 90%;
+    margin:auto;
+}
+@mixin margin80{
+    width: 80%;
+    margin:auto;
+}
+@mixin margin70{
+    width: 70%;
+    margin:auto;
+}
+@mixin font300{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+}
+@mixin font700{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+@mixin hoverancre{
+&:hover{
+    color: $sec;
+}
+}
+@mixin imagehero{
+    height: 70vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@mixin justify{
+    text-align: justify;
+    text-justify: auto;
+}

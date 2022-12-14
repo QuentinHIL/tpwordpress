@@ -1,0 +1,33 @@
+footer{
+    width: 100%;
+    background-color: $prim;
+    ul{
+        height: 4em;
+        @include margin90;
+        padding: 0;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        @include listenone;
+        a{
+            @media only screen and (max-width:425px){
+                font-size:0.75em;
+            };
+            @include textancreheader;
+            @include font300;
+            color: white;
+            }
+    }
+    div{
+        @include margin90;
+        display: flex;
+        justify-content: flex-end ;
+        i{
+            @media only screen and (max-width:425px){
+                font-size: 1.5em;
+            };
+            font-size: 3em;
+            color: $quad;
+        }
+    }
+}

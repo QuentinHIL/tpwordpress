@@ -1,0 +1,21 @@
+/* Theme Name: Theme Blog QH
+Descirption: Theme personnalisé 
+Version: 1.0
+Author: Quentin */
+
+@import 'variable.scss';
+@import 'mixin.scss';
+@import 'index.scss';
+@import 'blog.scss';
+@import 'single.scss';
+@import 'header.scss';
+@import 'contact.scss';
+@import 'about.scss';
+@import 'canada.scss';
+@import 'footer.scss';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap');
+
+body{
+    margin: 0;
+    background-color: $sec;
+}

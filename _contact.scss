@@ -1,0 +1,51 @@
+#herocontact{
+    div{
+        @include imagehero;
+    }
+}
+#formulaire{
+    h2{
+        @media only screen and (max-width:600px){
+            font-size: 1.5em;
+        };
+        @media only screen and (max-width:425px){
+            font-size: 1em;
+        }
+        background-color: $quad;
+        padding: 1em;
+        border-radius:0.75em;
+        @include margin90;
+        @include font700;
+        margin-top: 5%;
+        width: fit-content;
+        font-size: 2em;
+        color: white;
+    }
+    .wpcf7{
+        display:flex;
+        justify-content: center;
+        text-align: center;
+        form{
+            p{
+                label{
+                    @include font300;
+                    font-size: 1em;
+                    color: white;
+                    span{
+                        input, textarea{
+                        background-color: $ter;
+                        @include font300;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#cartecanada{
+    display: flex;
+    justify-content: center;
+    iframe{
+        border-radius: 2em;
+    }
+}
